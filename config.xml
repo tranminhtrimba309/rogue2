@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns:gap="http://phonegap.com/ns/1.0" xmlns="http://www.w3.org/ns/widgets" version="1.0.0" id="tw.edu.nfu.eZTravel">
+
+<!-- versionCode is optional and Android only -->
+
+
+<name>ROGUE</name>
+
+<description>CROSSFIT</description>
+
+<author email="tranminhtrimba309@gmail.com" href="https://www.roguefitness.com">Alex10755121</author>
+
+<content src="index.html"/>
+
+
+<platform name="android">
+
+<icon src="res/2.jpg"/>
+
+<icon src="res/android/2.jpg" density="ldpi"/>
+
+<icon src="res/android/2.jpg" density="mdpi"/>
+
+<icon src="res/android/2.jpg" density="hdpi"/>
+
+<icon src="res/android/2.jpg" density="xhdpi"/>
+
+</platform>
+
+</widget>

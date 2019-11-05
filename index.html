@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROGUE FITNESS</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+    <style>
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:active {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+ 
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .column {
+          float: left;
+          width: 50%;
+          padding: 5px;
+        }
+        
+        /* Clearfix (clear floats) */
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+        <style>
+            img:hover {
+              animation: shake 0.5s;
+              animation-iteration-count: infinite;
+            }
+            
+            @keyframes shake {
+              0% { transform: translate(1px, 1px) rotate(0deg); }
+              10% { transform: translate(-1px, -2px) rotate(-1deg); }
+              20% { transform: translate(-3px, 0px) rotate(1deg); }
+              30% { transform: translate(3px, 2px) rotate(0deg); }
+              40% { transform: translate(1px, -1px) rotate(1deg); }
+              50% { transform: translate(-1px, 2px) rotate(-1deg); }
+              60% { transform: translate(-3px, 1px) rotate(0deg); }
+              70% { transform: translate(3px, 1px) rotate(-1deg); }
+              80% { transform: translate(-1px, -1px) rotate(1deg); }
+              90% { transform: translate(1px, 2px) rotate(0deg); }
+              100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+            </style>
+             <style>
+                body {
+                    font-family: "Lato", sans-serif;
+                }
+                
+                .sidepanel  {
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    height: 250px;
+                    top: 0;
+                    left: 0;
+                    background-color: #111;
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
+                }
+                
+                .sidepanel a {
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: #818181;
+                    display: block;
+                    transition: 0.3s;
+                }
+                
+                .sidepanel a:hover {
+                    color: #f1f1f1;
+                }
+                
+                .sidepanel .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                }
+                
+                .openbtn {
+                    font-size: 20px;
+                    cursor: pointer;
+                    background-color: #111;
+                    color: white;
+                    padding: 10px 15px;
+                    border: none;
+                }
+                
+                .openbtn:hover {
+                    background-color:#444;
+                }
+            </style>
+        
+</head>
+
+
+<body>
+    
+  
+    
+    <div is="footer" data-position="fixed" data-role="footer">
+        <p style="text-align:center"><span style="color:red;font-weight:bold">ROGUE</span><span style="color:black;font-weight:bold">FITNESS</span></p>
+        <h4 style="text-align:center;">© 2010-2019 Rogue Fitness. All Rights Reserved.</h4>
+        <div is="navbar" data-role="navbar">
+            <ul>
+                <li is="navbtn">
+                    
+                    <a data-icon="info" href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop">Information</a>
+                    
+                    <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                            <form>
+                                    <div style="padding:40px 500px;">
+                                            <h3 >For questions and comments, call (614) 358-6190 or email roguefitness@g.com</h3> 
+                                                                            
+                                    </div>
+                            </form>
+                    </div>
+                </li>
+                <li is="navbtn">
+                    <a data-icon="mail"href="#contact" data-rel="popup" data-position-to="window" data-transition="pop">Contact us</a>
+                    <div data-role="popup" id="contact" data-theme="a" class="ui-corner-all">
+                            <form>
+                                    <div style="padding:20px 100px;">
+                                <table class=" table w-75 table-center table-dark table-striped mx-auto table-bordered table-hover mt-5 ">
+                                    
+                                    <tr class="bg-success">
+                                        
+                                        <td colspan="5" ><h1 style="text-align:center;">Contact us</h1>
+                                        </td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <form>
+                                        <th scope="row">Your full name:</th>
+                                        <td><input type="text" name="firstname" value="your name"></td>
+                                        <th scope="row">Your sex:</th>
+                                        <td>
+                                           111111111
+                                        </td>
+                                        </form>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th scope="row">Your nickname:</th>
+                                        <td><input type="text" name="nickname" value="nick name"></td>
+                                        <th scope="row">Your country:</th>
+                                        <td>
+                                            <input list="browsers" name="browser">
+                                            <datalist id="browsers">
+                                                <option value="USA">
+                                                    <option value="ENGLAND">
+                                                        <option value="VIET NAM">
+                                                            <option value="TAIWAN">
+                                                                <option value="CANADA">
+                                                                </datalist>
+                                                                
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th scope="row">Your email:</th>
+                                                        
+                                                        <td>
+                                                            <input type="email" name="email">
+                                                            
+                                                        </form></td>
+                                                        <th scope="row">Your phone number:</th>
+                                                        <td><form>
+                                                            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                                                            (***-**-***)
+                                                        </form></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Your birthday:</th>
+                                                        <td>
+                                                            <input type="date" name="bday">
+                                                        </form></td>
+                                                        <th scope="row">Your picture:</th>
+                                                        <td><form>
+                                                            Select a file: <input type="file" name="myFile">
+                                                        </form></td>
+                                                    </tr>
+                                                    <tr>
+                                                        
+                                                        
+                                                        <th colspan="2" scope="row">Your commment :</th>
+                                                        
+                                                        <td colspan="2"><form action="/action_page.php">
+                                                            <textarea name="message" style="width:1200px; height:600px;">please write your comment here</textarea>
+                                                            <br>
+                                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                                            
+                                                        </form></td>
+                                                        
+                                                        
+                                                    </tr>
+                                                </table>
+                                                
+                                                    </div>
+                                            </form>
+                                    </div>
+                                    
+                                </li>
+                                <li is="navbtn">
+                                    <a data-icon="shop">orders</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="index.html" rel="external">
+                        <div data-role="header" style="background:-webkit-linear-gradient(rgb(143,189,207),rgb(25,24,44))">
+                            <p style="text-align:center;font-size:50px"><span style="color:red;font-weight:bold">ROGUE</span><span style="color:black;font-weight:bold">FITNESS</span></p>
+                            
+                        </div><!-- /header --> 
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a style ="margin-left:10px " href="https://www.roguefitness.com/about-us#industrial-revolution">About</a>
+                            <a href="https://www.youtube.com/user/RogueFitness">
+                                <img src="image/yt.png" style="width:90px ;height:90px">
+                            </a>
+                            <a href="https://www.facebook.com/roguefitness/">
+                                <img src="image/fb.png" style="width:90px ;height:90px">
+                            </a>
+                            
+                           
+                        </div>
+                        <button style ="width:50px"class="openbtn" onclick="openNav()">☰</button>  
+                        <script>
+                            function openNav() {
+                                document.getElementById("mySidepanel").style.width = "160px";
+                                document.getElementById("mySidepanel").style.height = "400px";
+                                            }
+                            
+                            function closeNav() {
+                                document.getElementById("mySidepanel").style.width = "0";
+                            }
+                        </script>
+                        <div class="row">
+                            <div class="column">
+                              <img src="image/rich.webp" alt="rich" style="width:100%; margin-left:0px">
+                            </div>
+                            <div class="column">
+                              <img src="image/brooke.jpg" alt="brooke" style="width:100%; height:1138px">
+                            </div>
+                          
+                          </div>
+                          
+                    </a>
+                    <iframe style="margin-left:2px" width="100%" height="600px" src="https://www.youtube.com/embed/fZjrJT9Ot0s" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <object data="https://www.facebook.com/matfras/"></object>
+                    <div class="main">
+                        <div role="main" class="ui-content">
+                            
+                            <div class="ui-grid-b" style="height:200px; margin:10px">
+                                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                                    <a href="https://www.roguefitness.com" rel="external">
+                                        <img src="image/home.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Home</h5>
+                                    </a>
+                                </div>
+                                
+                                <div class="ui-block-b" style="text-align: center; height:100%">
+                                    <a href="#popupBasic" data-rel="popup" data-transition="pop"data-position-to="window">
+                                        <img src="image/region_and_language.png" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Languages</h5>
+                                        <div style="padding:100px 350px" data-role="popup" id="popupBasic">
+                                            <form>
+                                                    <input data-type="search" id="filterControlgroup-input">
+                                            </form>
+                                            <div data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
+                                                    <a href="#" class="ui-btn ui-shadow ui-corner-all">English</a>
+                                                    <a href="#" class="ui-btn ui-shadow ui-corner-all">Vietnamese</a>
+                                                    <a href="#" class="ui-btn ui-shadow ui-corner-all">Taiwanese</a>
+                                                    <a href="#" class="ui-btn ui-shadow ui-corner-all">French</a>
+                                                    <a href="#" class="ui-btn ui-shadow ui-corner-all">Germany</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="ui-block-c" style="text-align: center ;height:100%">
+                                    <a href="#signin" data-rel="popup" data-position-to="window" data-transition="pop">
+                                        
+                                        <img src="image/25245.svg" style="width:100px ;height:100px">
+                                        <h5  style="font-size:20px ;color:black">Sign in</h5>
+                                        
+                                        <div data-role="popup" id="signin" data-theme="a" class="ui-corner-all">
+                                                <form>
+                                                        <div style="padding:20px 200px;">
+                                                    <img src="image/giphy.gif" style="width:600px ;height:300px">
+                                                                <h3>Please sign in</h3>
+                                                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                                                <input  style="padding:10px 100px ;text-align:center " type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+                                                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                                                <input style="padding:10px 100px ;text-align:center " type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+                                                                <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+                                                        </div>
+                                                </form>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><!-- /grid-b -->
+                            <div class="ui-grid-b" style="height:200px ;margin:10px">
+                                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                                    <a href="shoes1.html" rel="external">
+                                        <img src="image/shoes.webp" style="width:100px;height:100px">
+                                        <h5  style="font-size:20px ;color:black">Shoes</h5>
+                                    </a>
+                                </div>
+                                <div class="ui-block-b" style="text-align: center; height:100%">
+                                    <a href="plates.html" rel="external">
+                                        <img src="image/plates.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Plates</h5>
+                                    </a>
+                                </div>
+                                <div class="ui-block-c" style="text-align: center ;height:100%">
+                                    <a href="straps.html" rel="external">
+                                        <img src="image/belt.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Straps</h5>
+                                    </a>
+                                    
+                                    
+                                </div>
+                            </div><!-- /grid-b -->
+                            <div class="ui-grid-b" style="height:200px;margin:10px">
+                                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                                    <a href="powerrack.html" rel="external">
+                                        <img src="image/pw racks.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Power racks</h5>
+                                    </a>
+                                </div>
+                                <div class="ui-block-b" style="text-align: center; height:30px">
+                                    <a href="rigandrack.html" rel="external">
+                                        <img src="image/rig and racks.webp" style="width:100px;height:100px ">
+                                        <h5  style="font-size:20px ;color:black">Rigs and Racks</h5>
+                                    </a>
+                                </div>
+                                <div class="ui-block-c" style="text-align: center ;height:100%">
+                                    <a href="benches.html" rel="external">
+                                        <img src="image/benchs.webp" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Benches</h5>
+                                        
+                                    </a>
+                                    
+                                </div>
+                            </div><!-- /grid-b -->
+                            <div class="ui-grid-b" style="height:200px;margin:10px">
+                                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                                    <a href="barbell.html" rel="external">
+                                        <img src="image/barbekk.webp" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Barbell</h5>
+                                    </a>
+                                </div>
+                                <div class="ui-block-b" style="text-align: center; height:100%">
+                                    <a href="equipmentforcrossfit.html" rel="external">
+                                        <img src="image/crossfit.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Equipment for crossfit</h5>
+                                        
+                                    </a>
+                                </div>
+                                <div class="ui-block-c" style="text-align: center ;height:100%">
+                                    <a href="apparel.html" rel="external">
+                                        <img src="image/apparel.jpg" style="width:100px ">
+                                        <h5  style="font-size:20px ;color:black">Apparel</h5>
+                                    </a>    
+                                </div>
+                            </div><!-- /grid-b -->
+                            
+                            <div class="signup">
+                                <h4 style="margin-left:8px;font-size:30px">Newsletter Sign Up</h4>
+                                <p style="font-size: 12px;margin-left:8px;">Sign up for our Newsletter with Rogue News and Product Releases.</p>
+                                
+                                <form id="etsubscribeform" action="//rogue-team.roguefitness.com/public/webform/process/" method="post">
+                                    <input type="hidden" name="fid" value="h0ppb3ph0wgyqnvtih0ic0rshqxf8" />
+                                    <input type="hidden" name="sid" value="5c046c305f263c11f57c1c989311920f" />
+                                    <input type="hidden" name="delid" value="" />
+                                    <input type="hidden" name="subid" value="" />
+                                    <input type="hidden" name="td" value="" />
+                                    <input type="hidden" name="formtype" value="addcontact" />
+                                    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+                                        var fieldMaps = {};
+                                    </script>
+                                    <div class="section" id="row_53502">
+                                        <div class="container" id="column_64448" style="text-align: center;">
+                                            <div class="email field_block">
+                                                <div class="field">
+                                                    <input type="text" class="text field fb-email input-text validate-email" size="35" name="112831" value="" placeholder="Email" onfocus="document.querySelector('.signup .hidden-list-options').style.display = 'block';" />
+                                                    <div class="field_error"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hidden-list-options">
+                                        <p style="font-size: 12px;">Choose your subscription preferences below. Sign up for both to get all our updates straight to your inbox.</p>
+                                        <div class="input-checkbox list_block" id="list_836714" list_id="836714">
+                                            <input type="checkbox" name="112837[836714]" value="true" id="general-subscription" />
+                                            <label for="general-subscription">General Subscription</label>
+                                            
+                                            
+                                        </div>
+                                        <div class="input-checkbox list_block" id="list_836715" list_id="836715">
+                                            <input type="checkbox" name="112838[836715]" value="true" id="rapid-fire" />
+                                            <label for="rapid-fire">Rapid Fire</label> 
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="112845[836713]" value="true" />
+                                    <input class="button ga-footer-exactTargetSubmitButton" type="submit" value="Sign Up" />
+                                    <p style="font-size:11px;color:red;margin-left:10px;">By signing up, you agree to Rogue's <a href="https://www.roguefitness.com/privacy-policy" class="ga-footer-link">Privacy Policy</a> and <a  href="https://www.roguefitness.com/terms-of-use" class="ga-footer-link">Terms of Use</a></p>
+                                    
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </body>
+                </html>

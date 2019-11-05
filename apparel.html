@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>CATEGORY</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+                  
+        
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">Apparel</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">Men's Apparel </a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="slide"> Women's Apparel</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slide"> Kid's Apparel</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content4" data-transition="slide"> Headwear</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content5" data-transition="slide"> Accessories </a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    
+    <!-- 鋼鐵人 Page: Content  -->
+    <div id="Content1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Men's Apparel</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div><img src="image/rich apparel.jpg" style=" width:2000px"></div>
+        
+        
+        <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+            <li is="listview-li">
+                <a href="MenTshirtpage1.html" data-transition="flip">T-Shirts </a>
+            </li>
+            <li is="listview-li">
+                <a href="Menshortpage1.html" data-transition="flip"> Shorts </a>
+            </li>
+            <li is="listview-li">
+                <a href="Menhoodiespage1.html" data-transition="flip"> Hoodies</a>
+            </li>
+            <li is="listview-li">
+                <a href="Menlongsleevespage1.html" data-transition="flip">  Longsleeve </a>
+            </li>
+            <li is="listview-li">
+                <a href="Mensingletspage1.html" data-transition="flip"> Singlets  </a>
+            </li>
+            <li is="listview-li">
+                <a href="Menpantspage1.html" data-transition="flip">   Pants</a>
+            </li>
+            
+        </ul>
+       
+    </div>
+    
+    
+    <!-- 美國隊長 Page: Content  -->
+    <div id="Content2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Women`s Apparel</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div><img src="image/women appreal 1.jpg" style=" width:2000px"></div>
+        <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+            <li is="listview-li">
+                <a href="wntshirtpage1.html" data-transition="slidedown">T-Shirts </a>
+            </li>
+            <li is="listview-li">
+                <a href="wnshortspage1.html" data-transition="slidedown"> Shorts </a>
+            </li>
+            <li is="listview-li">
+                <a href="wnhoodiespage1.html" data-transition="slidedown"> Hoodies</a>
+            </li>
+            <li is="listview-li">
+                <a href="wnlongsleevepage1.html" data-transition="slidedown">  Longsleeve </a>
+            </li>
+            <li is="listview-li">
+                <a href="wnshortspage1.html" data-transition="slidedown">  Shorts  </a>
+            </li>
+            <li is="listview-li">
+                <a href="wnsingletspage1.html" data-transition="slidedown"> Singlets  </a>
+            </li>
+            <li is="listview-li">
+                <a href="wnpantspage1.html" data-transition="slidedown">   Pants</a>
+            </li>
+            
+        </ul>
+      
+    </div>
+    
+    <!-- 蜘蛛人 Page: Content  -->
+    <div id="Content3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Kid's Apparel</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        
+        <div><img src="image/kids-learning.jpg" style=" width:2000px"></div>
+        <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+            <li is="listview-li">
+                <a href="#home" data-transition="flip">One-Pieces </a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="flip"> T-Shirts </a>
+            </li>
+            
+            
+        </ul>
+        
+    </div>
+    
+    <!-- 浩克 Page: Content  -->
+    <div id="Content4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Headwear</h3>
+            
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div><img src="image/headwears.jpg" style=" width:2000px"></div>
+        <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">Hats </a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">Beanies </a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="slide"> Headbands</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- 雷神索爾 Page: Content  -->
+    <div id="Content5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Accessories</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div><img src="image/acc1.jpg" style=" width:2000px"></div>
+        <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">Everyday Gear </a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">Socks </a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">  Belts</a>
+            </li>
+            <li is="listview-li">
+                <a href="#home" data-transition="slide">  Patches</a>
+            </li>
+            
+        </div>
+        
+    </body>
+    </html>

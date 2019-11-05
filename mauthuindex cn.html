@@ -1,0 +1,227 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        
+        <style>
+            a:link {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:visited {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                color: black;
+                text-decoration: none;
+            }
+            
+            a:active {
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        
+            <p lang="fr">Je suis français</p>
+
+        <div is="footer" data-position="fixed" data-role="footer">
+            <p style="text-align:center"><span style="color:red;font-weight:bold">ROGUE</span><span style="color:black;font-weight:bold">FITNESS</span></p>
+            <h4 style="text-align:center;">© 2010-2019 Rogue Fitness. All Rights Reserved.</h4>
+            <div is="navbar" data-role="navbar">
+                <ul>
+                    <li is="navbtn">
+                        
+                        <a data-icon="mail" href="#popupLogin" data-rel="popup" data-position-to="window" data-transition="pop">Information</a>
+                        
+                        <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+                                <form>
+                                        <div style="padding:40px 500px;">
+                                                <h3 span>For questions and comments, call (614) 358-6190 or email roguefitness@g.com</h3>
+                                                                                
+                                        </div>
+                                </form>
+                        </div>
+                    </li>
+                    <li is="navbtn">
+                        <a data-icon="mail">Inbox</a>
+                    </li>
+                    <li is="navbtn">
+                        <a data-icon="shop">orders</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="index.html" rel="external">
+            <div data-role="header" style="background:-webkit-linear-gradient(rgb(143,189,207),rgb(25,24,44))">
+                
+                <h1 style="font-size:30px ;color:black">Rogue Fitness</h1>    
+           </div><!-- /header --> 
+        </a>
+        
+        <div role="main" class="ui-content">
+            
+            <div class="ui-grid-b" style="height:200px; margin:10px">
+                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                    <a href="https://www.roguefitness.com" rel="external">
+                        <img src="image/home.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Home</h5>
+                    </a>
+                </div>
+                
+                <div class="ui-block-b" style="text-align: center; height:100%">
+                    <a href="#popupBasic" data-rel="popup" data-transition="pop"data-position-to="window">
+                        <img src="image/region_and_language.png" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Languages</h5>
+                        <div style="padding:400px 500px" data-role="popup" id="popupBasic">
+               
+                                 
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center ;height:100%">
+                    <a href="#signin" data-rel="popup" data-position-to="window" data-transition="pop">
+                        
+                        <img src="image/25245.svg" style="width:100px ;height:100px">
+                        <h5  style="font-size:20px ;color:black">Sign in</h5>
+                        
+                        <div data-role="popup" id="signin" data-theme="a" class="ui-corner-all">
+                                <form>
+                                        <div style="padding:20px 200px;">
+                                        <img src="image/giphy.gif" style="width:600px ;height:300px">
+                                                <h3>Please sign in</h3>
+                                                <label for="un" class="ui-hidden-accessible">Username:</label>
+                                                <input  style="padding:10px 100px ;text-align:center " type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+                                                <label for="pw" class="ui-hidden-accessible">Password:</label>
+                                                <input style="padding:10px 100px ;text-align:center " type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+                                                <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+                                        </div>
+                                </form>
+                        </div>
+                    </a>
+                </div>
+            </div><!-- /grid-b -->
+            <div class="ui-grid-b" style="height:200px ;margin:10px">
+                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                    <a href="shoes1.html" rel="external">
+                        <img src="image/shoes.webp" style="width:100px;height:100px">
+                        <h5  style="font-size:20px ;color:black">Shoes</h5>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="text-align: center; height:100%">
+                    <a href="plates.html" rel="external">
+                        <img src="image/plates.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Plates</h5>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center ;height:100%">
+                    <a href="straps.html" rel="external">
+                        <img src="image/belt.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Straps</h5>
+                    </a>
+                    
+                    
+                </div>
+            </div><!-- /grid-b -->
+            <div class="ui-grid-b" style="height:200px;margin:10px">
+                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                    <a href="powerrack.html" rel="external">
+                        <img src="image/pw racks.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Power racks</h5>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="text-align: center; height:30px">
+                    <a href="rigandrack.html" rel="external">
+                        <img src="image/rig and racks.webp" style="width:100px;height:100px ">
+                        <h5  style="font-size:20px ;color:black">Rigs and Racks</h5>
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center ;height:100%">
+                    <a href="benches.html" rel="external">
+                        <img src="image/benchs.webp" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Benches</h5>
+                        
+                    </a>
+                    
+                </div>
+            </div><!-- /grid-b -->
+            <div class="ui-grid-b" style="height:200px;margin:10px">
+                <div class="ui-block-a" style="text-align: center ;height:100%"> 
+                    <a href="barbell.html" rel="external">
+                        <img src="image/barbekk.webp" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Barbell</h5>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="text-align: center; height:100%">
+                    <a href="equipmentforcrossfit.html" rel="external">
+                        <img src="image/crossfit.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Equipment for crossfit</h5>
+                        
+                    </a>
+                </div>
+                <div class="ui-block-c" style="text-align: center ;height:100%">
+                    <a href="apparel.html" rel="external">
+                        <img src="image/apparel.jpg" style="width:100px ">
+                        <h5  style="font-size:20px ;color:black">Apparel</h5>
+                    </a>    
+                </div>
+            </div><!-- /grid-b -->
+            
+            <div class="signup">
+                <h4 style="margin-left:10px;font-size:30px">Newsletter Sign Up</h4>
+                <p style="font-size: 12px;margin-left:10px;">Sign up for our Newsletter with Rogue News and Product Releases.</p>
+                
+                <form id="etsubscribeform" action="//rogue-team.roguefitness.com/public/webform/process/" method="post">
+                    <input type="hidden" name="fid" value="h0ppb3ph0wgyqnvtih0ic0rshqxf8" />
+                    <input type="hidden" name="sid" value="5c046c305f263c11f57c1c989311920f" />
+                    <input type="hidden" name="delid" value="" />
+                    <input type="hidden" name="subid" value="" />
+                    <input type="hidden" name="td" value="" />
+                    <input type="hidden" name="formtype" value="addcontact" />
+                    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+                        var fieldMaps = {};
+                    </script>
+                    <div class="section" id="row_53502">
+                        <div class="container" id="column_64448" style="text-align: center;">
+                            <div class="email field_block">
+                                <div class="field">
+                                    <input type="text" class="text field fb-email input-text validate-email" size="35" name="112831" value="" placeholder="Email" onfocus="document.querySelector('.signup .hidden-list-options').style.display = 'block';" />
+                                    <div class="field_error"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-list-options">
+                        <p style="font-size: 12px;">Choose your subscription preferences below. Sign up for both to get all our updates straight to your inbox.</p>
+                        <div class="input-checkbox list_block" id="list_836714" list_id="836714">
+                            <input type="checkbox" name="112837[836714]" value="true" id="general-subscription" />
+                            <label for="general-subscription">General Subscription</label> 
+                        </div>
+                        <div class="input-checkbox list_block" id="list_836715" list_id="836715">
+                            <input type="checkbox" name="112838[836715]" value="true" id="rapid-fire" />
+                            <label for="rapid-fire">Rapid Fire</label> 
+                        </div>
+                    </div>
+                    <input type="hidden" name="112845[836713]" value="true" />
+                    <input class="button ga-footer-exactTargetSubmitButton" type="submit" value="Sign Up" />
+                    <p style="font-size:11px;color:red;margin-left:10px;">By signing up, you agree to Rogue's <a href="https://www.roguefitness.com/privacy-policy" class="ga-footer-link">Privacy Policy</a> and <a href="https://www.roguefitness.com/terms-of-use" class="ga-footer-link">Terms of Use</a></p>
+                    
+                </div>
+            </div>   
+        </div>
+        
+    </body>
+    </html>
